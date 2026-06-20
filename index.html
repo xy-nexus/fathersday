@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Father's Day Dad 💙</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+       <link rel="icon" href="adwaitlogo.jpg" type="image/jpg">
+</head>
+
+<body>
+    <!-- Floating Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-watermark">
+            <img src="images/dad-grey-suit.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="hero-content">
+            <h1 class="typewriter" id="typewriter">Happy Father's Day, Dad!&nbsp;💙</h1>
+            <p class="subtitle fade-in">Today is all about celebrating you and everything you've given our family</p>
+            <div class="floating-hearts">
+                <div class="heart">💙</div>
+                <div class="heart">⭐</div>
+                <div class="heart">🏆</div>
+                <div class="heart">💙</div>
+                <div class="heart">⭐</div>
+            </div>
+            <button class="cta-button" onclick="scrollToSection('gallery'); launchConfetti();">
+                click here  🎉
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Favorite pictures</h2>
+            <p class="gallery-hint">A few of the many moments worth celebrating </p>
+            <div class="gallery-grid">
+                <div class="photo-card" data-aos="fade-up" data-delay="100">
+                    <div class="photo-container">
+                        <img src="images/dad-graduation.jpg" alt="Walking together at graduation" style="object-position: 50% 15%;">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Been with me, every step of the way</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="200">
+                    <div class="photo-container">
+                        <img src="images/dad-award.jpg" alt="Receiving the Quality Service to Humanity Award" style="object-position: 50% 20%;">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Celebrating your achievements</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="300">
+                    <div class="photo-container">
+                        <img src="images/dad-arrival.jpg" alt="Dad arriving in style" style="object-position: 50% 28%;">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Always sharp, always leading</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="400">
+                    <div class="photo-container">
+                        <img src="images/dad-signing.jpg" alt="Dad hard at work" style="object-position: 50% 25%;">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Your hard work shaped our family</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="500">
+                    <div class="photo-container">
+                        <img src="images/dad-pink-agbada.jpg" alt="Dad laughing in his pink agbada" style="object-position: 50% 12%;">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Your joy is contagious, Dad</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-card" data-aos="fade-up" data-delay="600">
+                    <div class="photo-container">
+                        <img src="images/dad-grey-suit.jpg" alt="Dad looking dapper in a grey suit" style="object-position: 50% 8%;">
+                        <div class="photo-overlay">
+                            <div class="photo-caption">Forever the best dressed dad</div>
+                            <button class="like-btn" onclick="toggleLike(this)">
+                                <span class="heart-icon">🤍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Father's Day Message Section -->
+    <section class="message-section" id="message">
+        <div class="message-watermark">
+            <img src="images/dad-pink-agbada.jpg" alt="" aria-hidden="true">
+        </div>
+        <div class="container">
+            <h2 class="section-title messages-title">Messages From Your Children</h2>
+            <p class="gallery-hint messages-subtitle">In our own words, Daddy</p>
+
+            <div class="messages-grid">
+                <div class="message-bubble message-bubble--wide" data-aos="fade-up" data-delay="100">
+                    <span class="quote-mark">"</span>
+                    <p class="message-bubble-text">
+                        I see people say I am happy and grateful I work with the permanent secretary, or
+                        even as their boss, and I just smile and say to myself: you haven't had him as a
+                        father. I have seen you in many lights, different situations, different occasions,
+                        and I can confidently say this, I couldn't have asked for a better father. Thank you for everything,
+                        God knows words alone can't express how grateful i feel. Thank you for being my father❤️.
+                    </p>
+                    <p class="message-bubble-author">— Sogie</p>
+                </div>
+
+                <div class="message-bubble" data-aos="fade-up" data-delay="200">
+                    <span class="quote-mark">"</span>
+                    <p class="message-bubble-text">
+                        The older I grow, the more I understand and appreciate all the things you do and
+                        have done for me. Your love has always been present, and I'm grateful for it every
+                        single day. I hope you know how proud I am to call you my father and daddy. I pray
+                        life rewards you with peace, joy, strength, and many beautiful years ahead. You
+                        deserve all the happiness in the world for the kind of father you've been. Happy
+                        Father's Day daddy and thank you for being an amazing father. I love you deeply.
+                    </p>
+                    <p class="message-bubble-author">— Osayuki</p>
+                </div>
+
+                <div class="message-bubble" data-aos="fade-up" data-delay="300">
+                    <span class="quote-mark">"</span>
+                    <p class="message-bubble-text">
+                        Happy Father's Day to an amazing dad, for providing and sharing your teachings with
+                        us throughout our life. May God continue to strengthen you, bless the work of your
+                        hands, protect you, and grant you long life in good health and happiness. We love
+                        and appreciate you always 🙏🏽❤️
+                    </p>
+                    <p class="message-bubble-author">— Muyi</p>
+                </div>
+
+                <div class="message-bubble" data-aos="fade-up" data-delay="400">
+                    <span class="quote-mark">"</span>
+                    <p class="message-bubble-text">
+                        Happy Father's Day! Thank you for your love, support, guidance, and sacrifices. I am
+                        grateful for everything you do for our family. May God bless you with good health,
+                        happiness, and many more years of joy.
+                    </p>
+                    <p class="message-bubble-author">— Eloghosa</p>
+                </div>
+
+                <div class="message-bubble" data-aos="fade-up" data-delay="500">
+                    <span class="quote-mark">"</span>
+                    <p class="message-bubble-text">
+                        Happy Father's Day Daddy. Thank you for your strength, guidance, sacrifices, and
+                        unconditional love. Wishing you a day filled with love, happiness, and appreciation.
+                    </p>
+                    <p class="message-bubble-author">— Timothy</p>
+                </div>
+            </div>
+
+            <div class="message-hearts">
+                <span class="heart-animation">💙</span>
+                <span class="heart-animation">⭐</span>
+                <span class="heart-animation">🏆</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Throwback Secret Section -->
+    <section class="throwback-section" id="throwback">
+        <div class="container">
+            <div class="lock-prompt" id="lockPrompt">
+                <div class="lock-icon">🔒</div>
+                <h3 class="lock-title">Got a secret code?</h3>
+                <p class="lock-subtitle">Unlock a few throwback memories</p>
+                <div class="code-input-group">
+                    <input type="password" id="secretCodeInput" class="code-input" placeholder="Enter code"
+                        inputmode="numeric" autocomplete="off">
+                    <button class="unlock-btn" onclick="checkSecretCode()">Unlock</button>
+                </div>
+                <button class="hint-toggle" type="button" onclick="toggleHint()">Need a hint?</button>
+                <p class="hint-text" id="hintText">Hint: Sogie's account number</p>
+                <p class="error-text" id="errorText">That's not it — try again</p>
+            </div>
+
+            <div class="throwback-gallery" id="throwbackGallery">
+                <h2 class="section-title throwback-title">Throwback Memories</h2>
+                <p class="gallery-hint">A peek into the archives 📸</p>
+                <div class="gallery-grid throwback-grid">
+                    <div class="photo-card" data-aos="fade-up" data-delay="100">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-1-doctor-desk.jpg" alt="At the desk, younger days"
+                                style="object-position: 50% 20%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Hard at work, even back then</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="150">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-2-retro-shirt.jpg" alt="Young and stylish"
+                                style="object-position: 50% 15%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Young, stylish, unbothered</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="200">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-3-floral-suit.jpg" alt="Always dressed sharp"
+                                style="object-position: 50% 18%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Always knew how to dress</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="250">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-4-with-wife.jpg" alt="With the love of his life"
+                                style="object-position: 50% 42%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">With the love of his life</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="300">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-5-kids-cake.jpg" alt="Family celebrations at home"
+                                style="object-position: 50% 35%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">The house full of laughter</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="350">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-6-vintage-studio.jpg" alt="A throwback studio portrait"
+                                style="object-position: 50% 20%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">A blast from the past</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="400">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-7-london.jpg" alt="Adventures abroad"
+                                style="object-position: 50% 28%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">Adventures abroad</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="photo-card" data-aos="fade-up" data-delay="450">
+                        <div class="photo-container throwback-photo">
+                            <img src="images/throwback/throwback-8-family-pink.jpg" alt="The whole family together"
+                                style="object-position: 50% 18%;">
+                            <div class="photo-overlay">
+                                <div class="photo-caption">The whole family, together</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Message -->
+    <div class="toast-message" id="toastMessage"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026@ Dosas Made with ❤️ for the best dad in the world</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
